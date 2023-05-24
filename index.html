@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        var candidato1 = 0
+        var candidato2 = 0
+        var candidato3 = 0
+        var candidato4 = 0
+        var nulo = 0
+
+
+        var deveSair = false
+
+        while (deveSair == false) {
+
+            var Votos = prompt("VOTE \n 1 - Candidato1 \n 2 - Candidato2 \n 3 - Candidato3 \n 4 - Candidato4 \n 5 - Nulo \n 0 - Sair")
+
+            console.log(Votos)
+            switch (Votos) {
+                case "1":
+                    alert("Você acabou de votar em Candidato1")
+                    candidato1 = candidato1 + 1
+                    break;
+
+                case "2":
+                    alert("Você acabou de votar em Candidato2")
+                    candidato2 = candidato2 + 1
+                    break;
+
+                case "3":
+                    alert("Você acabou de votar em Candidato3")
+                    candidato3 = candidato3 + 1
+                    break;
+
+                case "4":
+                    alert("Você acabou de votar em Candidato4")
+                    candidato4 = candidato4 + 1
+                    break;
+
+                case "5":
+                    alert("Você votou nulo!")
+                    nulo = nulo + 1
+                    break;
+
+                case "0":
+                    alert(`Saindo...`)
+                    deveSair = true 
+                    break;
+                default: 
+                alert(desconhecido)
+            }
+        }
+    </script>
+</body>
+
+</html>
